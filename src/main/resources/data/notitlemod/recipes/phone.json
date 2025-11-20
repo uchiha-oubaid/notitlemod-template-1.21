@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:stick"
+    },
+    "G": {
+      "item": "minecraft:dirt"
+    }
+  },
+  "pattern": [
+    "IGI",
+    "IGI",
+    "IGI"
+  ],
+  "result": {
+    "item": "notitlemod:phone",
+    "count": 1
+  },
+  "show_notification": true
+}
