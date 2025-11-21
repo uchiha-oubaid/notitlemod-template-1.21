@@ -13,6 +13,9 @@ public class ModItems {
     public static final Item PHONE = register(new PhoneItem(new Item.Settings().maxCount(1)),
             "phone");
 
+    public static final Item CHOCOLATE = register(new Item(new Item.Settings().food(ModFoodComponent.CHOCOLATE)),
+            "chocolate");
+
     private static Item register(Item item, String name) {
         Identifier itemName = Identifier.of(NoTitleMod.MOD_ID, name);
         // the registered item
