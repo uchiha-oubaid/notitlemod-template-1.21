@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.notitlemod.gigachad_music_disk.desc"
+  },
+  "length_in_seconds": 266.0,
+  "sound_event": "notitlemod:gigachad_song"
+}

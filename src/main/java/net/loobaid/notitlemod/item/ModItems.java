@@ -18,7 +18,7 @@ public class ModItems {
             "chocolate");
 
     public static final Item GIGACHAD_MUSIC_DISK =
-            register(new Item(new Item.Settings().jukeboxPlayable(ModSounds.GIGACHAD_SONG_KEY)),
+            register(new Item(new Item.Settings().jukeboxPlayable(ModSounds.GIGACHAD_SONG_KEY).maxCount(1)),
                     "gigachad_music_disk");
 
     private static Item register(Item item, String name) { // a helper method to register items
@@ -36,6 +36,7 @@ public class ModItems {
                 .register(entries -> {
                     entries.add(PHONE);
                     entries.add(CHOCOLATE);
+                    entries.add(GIGACHAD_MUSIC_DISK);
                 });
 
     }
