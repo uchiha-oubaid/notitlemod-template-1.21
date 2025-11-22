@@ -6,7 +6,6 @@ import net.minecraft.entity.AnimationState;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
-import net.minecraft.entity.attribute.DefaultAttributeRegistry;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.PassiveEntity;
@@ -35,6 +34,7 @@ public class HumanEntity extends AnimalEntity {
         this.goalSelector.add(3, new LookAtEntityGoal(this, PlayerEntity.class, 2.0f));
     }
 
+    // adding the attributes for the mob
     public static DefaultAttributeContainer.Builder createMobAttribute() {
         return DefaultAttributeContainer.builder()
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.50)
@@ -64,7 +64,7 @@ public class HumanEntity extends AnimalEntity {
 
     @Override
     public boolean isBreedingItem(ItemStack stack) {
-        return false;
+        return stack.isOf(ModItems.CHOCOLATE);
     }
 
     @Override
